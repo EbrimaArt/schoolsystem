@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School System Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>School System Portal</h2>
+      <p>Login or create an account to manage your academic activities</p>
+      <form id="account-form">
+        <div class="input-group">
+          <select name="salutation" required>
+            <option value="" disabled selected>Salutation</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+          </select>
+          <input type="text" name="first-name" placeholder="First Name" required>
+          <input type="text" name="middle-name" placeholder="Middle Name">
+          <input type="text" name="last-name" placeholder="Last Name" required>
+          <input type="date" name="dob" required>
+          <select name="gender" required>
+            <option value="" disabled selected>Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <select name="marital-status" required>
+            <option value="" disabled selected>Marital Status</option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+          </select>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="mobile" placeholder="Mobile" required>
+          <select name="nationality" required>
+            <option value="" disabled selected>Nationality</option>
+            <option value="Gambian">Gambian</option>
+            <option value="Other">Other</option>
+          </select>
+          <input type="password" name="password" placeholder="Password" required>
+          <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">Accept terms and conditions</label>
+        </div>
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+    <div class="info">
+      <h3>Admission closing soon</h3>
+      <p>Please read the instructions carefully before completing each step to avoid any mistakes.</p>
+      <ol>
+        <li>Fill out the form and click on the submit button to create an account.</li>
+        <li>Login with the email and password you used to create your account.</li>
+        <li>Start your application process, and you'll be redirected to the next page.</li>
+      </ol>
+      <p>For more information, contact us via phone or WhatsApp.</p>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Welcome, Admin!</h2>
+    <p>Here you can manage students, view grades, and process applications.</p>
+    <!-- Add Admin specific controls here -->
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Welcome, User!</h2>
+    <p>Your Grades:</p>
+    <ul id="grades-list"></ul>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Welcome, Admin!</h2>
+    <p>Here you can manage students, view grades, and process applications.</p>
+
+    <!-- Form for adding grades -->
+    <div>
+      <h3>Add Student Grade</h3>
+      <form id="add-grade-form">
+        <input type="email" id="student-email" placeholder="Student's Email" required>
+        <input type="text" id="course-name" placeholder="Course Name" required>
+        <input type="text" id="grade" placeholder="Grade" required>
+        <button type="submit">Add Grade</button>
+      </form>
+    </div>
+
+    <!-- Display added grades -->
+    <h3>Grades List</h3>
+    <ul id="grades-list"></ul>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Welcome, User!</h2>
+    <p>Your Grades:</p>
+    <ul id="user-grades-list"></ul>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Welcome, Admin!</h2>
+    <p>Here you can manage students, view grades, and process applications.</p>
+
+    <!-- Form for adding grades -->
+    <div>
+      <h3>Add Student Grade</h3>
+      <form id="add-grade-form">
+        <input type="text" id="admission-number" placeholder="Admission Number" required>
+        <input type="text" id="id-card" placeholder="ID Card Details" required>
+        <input type="email" id="student-email" placeholder="Student's Email" required>
+        <input type="text" id="course-name" placeholder="Course Name" required>
+        <input type="text" id="grade" placeholder="Grade" required>
+        <button type="submit">Add Grade</button>
+      </form>
+    </div>
+
+    <!-- Display added grades -->
+    <h3>Grades List</h3>
+    <ul id="grades-list"></ul>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
+<div class="container">
+  <h2>Request Application PIN</h2>
+  <form id="pin-request-form">
+    <input type="text" id="admission-number" placeholder="Admission Number" required>
+    <button type="submit">Generate PIN</button>
+  </form>
+  <p id="pin-message"></p>
+</div>
+
+<script>
+  document.getElementById("pin-request-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const admissionNumber = document.getElementById("admission-number").value;
+    fetch('http://localhost:5000/generate-pin', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          admissionNumber
+        }),
+      })
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("pin-message").textContent = data;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  });
+</script>
+<div class="container">
+  <h2>Validate Application PIN</h2>
+  <form id="pin-validation-form">
+    <input type="text" id="admission-number" placeholder="Admission Number" required>
+    <input type="text" id="application-pin" placeholder="Application PIN" required>
+    <button type="submit">Validate PIN</button>
+  </form>
+  <p id="validation-message"></p>
+</div>
+
+<script>
+  document.getElementById("pin-validation-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const admissionNumber = document.getElementById("admission-number").value;
+    const applicationPin = document.getElementById("application-pin").value;
+    fetch('http://localhost:5000/validate-pin', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          admissionNumber,
+          applicationPin
+        }),
+      })
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("validation-message").textContent = data;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  });
+</script>

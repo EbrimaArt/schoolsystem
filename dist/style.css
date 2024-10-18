@@ -1,0 +1,112 @@
+/* Basic styling for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #caf0f8; /* Light background for elegance */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Form container */
+.form-container {
+  background-color: #03045e; /* Dark blue background */
+  color: #caf0f8; /* Light text for contrast */
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.input-group input,
+.input-group select {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #90e0ef; /* Border color for consistency */
+  background-color: #caf0f8; /* Light background */
+  color: #03045e; /* Dark text */
+}
+
+/* Checkbox styling */
+.checkbox {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-right: 5px;
+}
+
+/* Button styling */
+button {
+  background-color: #0077b6; /* Primary button color */
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00b4d8; /* Lighter blue on hover */
+}
+
+/* Information section styling */
+.info {
+  background-color: #ffffff;
+  color: #03045e; /* Dark blue for text */
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Headings and paragraph */
+h2,
+h3 {
+  color: #00b4d8; /* Light blue headings */
+}
+
+p,
+label {
+  color: #03045e; /* Consistent text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form-container,
+  .info {
+    width: 100%;
+  }
+}
